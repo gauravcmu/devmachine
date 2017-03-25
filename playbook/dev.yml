@@ -1,0 +1,13 @@
+---
+- hosts: all
+  sudo: yes
+  remote_user: root
+  gather_facts: no
+  pre_tasks:
+    - name: 'install python2'
+      raw: sudo apt-get -y install python-simplejson
+    - name: 'install make'
+      raw: sudo apt-get -y install make  
+    - name: 'install go'
+      raw: sudo apt-get -y install golang-go
+
