@@ -10,4 +10,7 @@
       raw: sudo apt-get -y install make  
     - name: 'install go'
       raw: sudo apt-get -y install golang-go
+    - name: 'install cscope'
+      raw: sudo apt-get -y install cscope 
+
 
